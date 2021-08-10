@@ -1,0 +1,14 @@
+{
+   "type": "postgres",
+   "host": "postgres_container",
+   "port": 5432,
+   "username": "postgres",
+   "password": "",
+   "database": "development",
+   "entities": ["dist/**/domain/*.entity.*"],
+   "migrations": ["dist/migrations/**/*.js"],
+   "cli": {
+      "migrationsDir": "migrations"
+   }
+}
+
